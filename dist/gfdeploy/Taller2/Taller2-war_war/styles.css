@@ -1,0 +1,150 @@
+/* 
+    Created on : 17/03/2020, 06:42:40 PM
+    Author     : Juan Pablo
+*/
+body{
+    background-color: #08141c;
+    margin:0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    margin: 0 auto;
+    max-width: 50%;
+    background-color: #0E2433;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#display{
+    height: 100%;
+    background-color: #0E2433;
+    flex: 1 1 40%;
+}
+
+#table{
+    display: flex;
+    flex-direction: column;
+    background-color: #0B344F;
+    flex: 1 1 60%;
+}
+
+.campoDisplay h1{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    color:white;
+}
+
+.campoDisplay{
+    position: relative;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.campoDisplay h2{
+    text-align: center;
+    color:white;
+    font-size: 32px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#resultadoValor{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 38px;
+    padding: 0 40px;
+    color:white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.camposEntrada{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type="text"]{
+    background-color: #0E2433;
+    width: 100%;
+    border:none;
+
+}
+input[type="submit"]{
+    visibility: hidden;
+}
+form{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fila{
+    display:flex;
+    flex-basis: 100%;
+    flex:1 1 100%;
+}
+
+.columna{
+    flex:1 1 25%;
+    flex-basis: 100%;
+
+    cursor: pointer;
+    border: .5px solid #aaa;
+}
+
+.columna-doble{
+    cursor: pointer;
+    flex:1 1 50%;
+    flex-basis: 100%;
+
+    border: .5px solid #aaa;
+}
+
+.columna:hover,
+.columna-doble:hover{
+    background-color: #296D98;
+    ;
+}
+
+.fila h2,
+input{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    margin: 0 auto;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#resultado{
+    background-color: #296D98;
+}
+
+main h2,
+main h1{
+    color:white;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+#again{
+    width: 180px;
+    height: auto;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    margin: 50px auto;
+    text-align: center;
+    text-decoration: none;
+    border:none;
+    padding: 10px 0;
+    color:white;
+    background-color: #296D98;
+}
+
+

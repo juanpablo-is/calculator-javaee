@@ -1,0 +1,54 @@
+		STUDENT
+
+id
+first
+last
+year
+
+
+
+
+
+		SUBJECT
+codigo
+nombre
+numero_creditos
+semestre
+numero de estudiantes
+
+
+
+
+
+		PERIOD
+idStudent
+idCurso
+fecha
+
+
+/*Create Table PERIOD(
+CODIGO  varchar (20) NOT NULL PRIMARY KEY,
+NOMBRE  varchar (50),
+DESCRIPCION varchar (100)
+);*/
+
+Create Table COURSE (
+CODE  varchar (15) NOT NULL PRIMARY KEY,
+NAME  varchar (20),
+CREDITS Integer ,
+SEMESTER  Integer,
+STUDENTS Integer
+);
+
+Create Table PERIOD(
+ID_COURSE varchar (15) NOT NULL,
+ID_STUDENT  Integer NOT NULL,
+PRIMARY KEY(ID_COURSE,ID_STUDENT),
+DATE date
+);
+
+ALTER TABLE PERIOD ADD CONSTRAINT ID_COURSE_FK
+Foreign Key (ID_COURSE) REFERENCES COURSE (CODE);
+
+ALTER TABLE PERIOD ADD CONSTRAINT ID_STUDENT_FK
+Foreign Key (ID_STUDENT) REFERENCES STUDENT (STUDENTID);
